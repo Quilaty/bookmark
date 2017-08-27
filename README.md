@@ -1,12 +1,15 @@
 # Markdown Note
 Udemy Class:
-[Easy Markdown with VsCode](https://www.udemy.com/easy-markdown-with-vs-code/learn/v4/content "")
+[Easy Markdown with VsCode](https://www.udemy.com/easy-markdown-with-vs-code/learn/v4/content)
+
+MkDocs document: [Home](http://www.mkdocs.org/)
+
 - [ ] Getting Markdown
   * VsCode extension:
     * GFM Preview
     * Markdown PasteURL
     * Markdown Shortcuts
-    * ??maekdownlint
+    * ??markdownlint
 - [ ] Fundamental Formatting
   * text formatting
     * boldface
@@ -18,8 +21,15 @@ Udemy Class:
   * checkbox
 - [ ] Put in the Pictures
   * 好先生大正妹 - 江萊
-  ![Future](http://img.alicdn.com/imgextra/i1/1715962537/TB2mcaOqXXXXXcEXXXXXXXXXXXX_!!1715962537.png "pretty hot")  
+  [![Future](http://image.ijq.tv/201604/05/15-18-22-20-10.jpg "好先生")](http://img.alicdn.com/imgextra/i1/1715962537/TB2mcaOqXXXXXcEXXXXXXXXXXXX_!!1715962537.png "pretty hot") 
 - [ ] Hyperlinks
+  * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/ "go to Mastering Markdown")
+    * Text
+    * Lists
+    * Images
+    * Headers & Quotes
+    * Code
+    * Extras
 
 - [ ] Animate your Markdown documents with video
 
