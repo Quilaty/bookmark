@@ -1,44 +1,29 @@
 # Markdown Note
+
 Udemy Class:
 [Easy Markdown with VsCode](https://www.udemy.com/easy-markdown-with-vs-code/learn/v4/content)
 
-MkDocs document: [Home](http://www.mkdocs.org/)
+[github sshkeyGen](http://wiki.csie.ncku.edu.tw/github)
 
 gh-page: <https://code-poison.github.io/noteMK/>
 
-- [ ] Getting Markdown
-  * VsCode extension:
-    * GFM Preview
-    * Markdown PasteURL
-    * Markdown Shortcuts
-    * ??markdownlint
-- [ ] Fundamental Formatting
-  * text formatting
-    * boldface
-    * italic
-    * strikethrough
-- [ ] Making Lists
-  * bullet point
-  * number list
-  * checkbox
-- [ ] Put in the Pictures
-  * 好先生大正妹 - 江萊
-  [![Future](http://image.ijq.tv/201604/05/15-18-22-20-10.jpg "好先生")](http://img.alicdn.com/imgextra/i1/1715962537/TB2mcaOqXXXXXcEXXXXXXXXXXXX_!!1715962537.png "pretty hot") 
-- [ ] Hyperlinks
-  * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/ "go to Mastering Markdown")
-    * Text
-    * Lists
-    * Images
-    * Headers & Quotes
-    * Code
-    * Extras
+## Getting Markdown
 
-- [ ] Animate your Markdown documents with video
+* VsCode extension:
+  * GFM Preview
+  * Markdown PasteURL
+  * Markdown Shortcuts
+  * markdownlint
 
-- [ ] Terrific Tables the Easy Way
+## Installation
 
-- [ ] Sharing Code
+MkDocs document: [Home](http://www.mkdocs.org/)
 
-- [ ] Spice it Up with Emojis
+### 手動安裝管理工具
 
-- [ ] Bonus Lectur
+```bash
+$ python --version
+Python 2.7.2
+$ pip --version
+pip 1.5.2
+```
