@@ -1,15 +1,30 @@
-# Markdown Note - MkDocs
-
-MkDocs Official: <http://www.mkdocs.org/>
+# Markdown Note
 
 Udemy Class:
 [Easy Markdown with VsCode](https://www.udemy.com/easy-markdown-with-vs-code/learn/v4/content)
 
-Gh-page: <https://code-poison.github.io/noteMK/>
+[github sshkeyGen](http://wiki.csie.ncku.edu.tw/github)
 
-## EDE: VsCode extension
+gh-page: <https://code-poison.github.io/noteMK/>
 
-* GFM Preview
-* Markdown PasteURL
-* Markdown Shortcuts
-* markdownlint
+## Getting Markdown
+
+* VsCode extension:
+  * GFM Preview
+  * Markdown PasteURL
+  * Markdown Shortcuts
+  * markdownlint
+
+## Installation
+
+MkDocs document: [Home](http://www.mkdocs.org/)
+
+### 手動安裝管理工具
+
+```bash
+$ python --version
+Python 2.7.2
+$ pip --version
+pip 1.5.2
+```
+>>>>>>> bc671a1cca360feef6510a8490d37eab24ed947d
