@@ -58,3 +58,10 @@ MkDocs document: [Home](http://www.mkdocs.org/)
     mkdocs serve
     ```
     `ctrl + c` 離開 serve模式
+
+## 發佈到線上
+
+1. 發佈到 Github Page
+    ```bash
+    mkdocs gh-deploy
+    ```
