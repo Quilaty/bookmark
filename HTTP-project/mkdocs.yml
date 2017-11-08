@@ -2,3 +2,19 @@ site_name: HTTP 網路開發
 pages:
     - Home: index.md
     - Chrome Dev-tool: dev-tools.md
+    - HTTPS: http.md
+theme: 'material'
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
