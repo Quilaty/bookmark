@@ -1,6 +1,7 @@
 site_name: HTTP 網路開發
 pages:
     - Home: index.md
+    - Firefox: firefox.md
     - Chrome Dev-tool: dev-tools.md
     - HTTPS: http.md
 theme: 'material'
