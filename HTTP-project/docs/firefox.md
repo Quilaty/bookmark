@@ -52,11 +52,45 @@ ref: [MDN #CSS_pane](https://developer.mozilla.org/zh-TW/docs/Tools/Page_Inspect
     1. 頁面運行的 JavaScript 相關問題
 1. 透過執行頁面中的 JavaScript 表達式與網頁互動
 
-### 打開網頁主控台
+### 打開網頁主控台(console)
+
+如何開始使用網頁主控台，分成三個區塊(上、中、下)
+
+1. Toolbar
+    1. 可以觀察個別的程式碼分類，常見的有 Net ( Errors, Warnings, XHR, Log ), Css( Errors, Warnings, Reflows), JS( Errors, Warnings), Sercurity( Errors, Warnings), Logging(Errors, Warnings, Info, Log, Shared Workers, Service Workers, Add-on or Chrome Workers), Server( Errors, Warnings, Info, Log)
+    1. 過濾器 ( Filtering by text)
+    1. 清除 LOG
+1. Command Line
+1. message Display Pane
 
 ### 主控台訊息
 
+主控台相關的紀錄訊息。
+
+[The command line interpreter](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/The_command_line_interpreter#Helper_commands)
+
 ### 命令行解釋器
+
+如何用主控台與文件互動。
+
+1. Helper commands
+    1. `$()`: 等同 `document.querySelector()`
+    1. `$$()`: 等同 `document.querySelectorAll()`
+    1. `$0`: 顯示在這頁選擇到的 element
+    1. `$_`
+    1. `$x()`
+    1. `keys()`: 給定一個物件，會返回這個物件裡面所有的keys
+    1. `values()`
+    1. `clear()`
+    1. `inspect()`: 給一個物件，會打開這個物件裡面的東西
+    1. `pprint()`: Formats the specified value in a readable way; this is useful for dumping the contents of objects and arrays.
+    1. `help()`
+    1. `cd()`: 如果頁面嵌入 `iframe`，可以用 `cd()` 改變 `console` 的scope，變成指定的 iframe，這樣就可以執行定義在 iframe裡面的函數。
+        1. Switch JavaScript evaluation context to a different iframe in the page.
+        1. [Working with iframes](https://developer.mozilla.org/en-US/docs/Tools/Working_with_iframes)
+    1. `copy()`: 會複製 `outerHTML`的內容
+        1. `JSON.stringify()`: 一個特殊的方法，可以將值轉變為 JSON 的字串，參考 [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+    1. `clearHistory()`: 可以清除之前輸入過的指令(按 方向鍵上 會出現的指令)
 
 ### 輸出對象
 
