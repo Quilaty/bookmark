@@ -157,8 +157,19 @@ ref: [MDN #CSS_pane](https://developer.mozilla.org/zh-TW/docs/Tools/Page_Inspect
 
 ## JavaScript Debugger (JavaScript 除錯器)
 
-1. User Interface Tour: UI Tour
-1. To find out what you can do with the debugger
+1. 啟動除錯器
+1. 遠端除錯
+1. 除錯器工具列
+    1. 暫停/繼續 (F6)
+    1. Step Over (F7): 從目前的 JavaScript 程式碼的行數跳往下一行
+    1. Step Into (F8): 進入 JavaScript 程式碼目前行數的函示呼叫
+    1. Step Out (Shift F8): 執行指令碼，直到退出目前的函式
+1. 使用除錯器
+    1. 中斷點
+    1. 管理中斷點
+    1. 變數控制面板( Variable panel)
+    1. Watch expressions
+1. 停止除錯器
 
 ## Network Monitor (網路監控)
 
