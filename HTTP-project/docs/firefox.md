@@ -92,13 +92,73 @@ ref: [MDN #CSS_pane](https://developer.mozilla.org/zh-TW/docs/Tools/Page_Inspect
         1. `JSON.stringify()`: 一個特殊的方法，可以將值轉變為 JSON 的字串，參考 [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
     1. `clearHistory()`: 可以清除之前輸入過的指令(按 方向鍵上 會出現的指令)
 
-### 輸出對象
+### Rich output 輸出對象
 
-### 分割主控台
+當網路主控台印出物件時，它不但會顯示物件名、還會包括該物件資訊的 richer set。尤其是它要：
+
+* 提供某些類型的額外資訊
+* 開啟物件屬性的詳細檢查
+* 為 DOM 元素提供 richer information，並讓你能在檢查中選擇。
+
+1. 特定類型的 rich output:
+    1. Object
+        ```js
+        o = new Object({a:1, b:2});
+        ```
+    1. Array
+        ```js
+        a = new Array("apples", "oranges", "bananas");
+        ```
+    1. Date
+        ```js
+        d = new Date();
+        ```
+    1. Promise (new in Firefox 36)
+        ```bash
+        Promise {<state>: "pending" }
+        Promise {<state>: "rejected", <reason>: 1 }
+        Promise {<state>: "pending" }
+        Promise {<state>: "fulfulled", <value>: 2 }
+        ```
+    1. RegExp
+        ```js
+        r = new RegExp("(\w+)\s(\w+)");
+        ```
+    1. Window
+        ```js
+        window
+        ```
+    1. Document
+        ```js
+        document
+        ```
+    1. Element
+        ```js
+        document.getElementById("Info_messages")
+        ```
+    1. Event
+        ```js
+        document.body.addEventListener("click", (e) => {console.log(e)});
+        document.body.click();
+        ```
+1. 檢查物件屬性
+    1. 當控制台印出一個物件的時候，它會以斜體的樣式呈現。點擊它，你會看到一個有該物件詳細資訊的面板
+    1. 關閉此面板按 ESC
 
 ### 鍵盤快速鍵
 
+1. `Ctrl W`: 關閉當前分頁
+1. `Ctrl shift c`: 快速啟動 console 的 selecter 的功能
+1. `Ctrl 1~0`: 切換到指定分頁
+1. `Ctrl T`: 開啟新分頁
+1. `Ctrl tab`: 切換分頁
+1. `Ctrl f`: 搜尋器
+1. `Ctrl u`: 檢查原始碼
+
 ## JavaScript Debugger (JavaScript 除錯器)
+
+1. User Interface Tour: UI Tour
+1. To find out what you can do with the debugger
 
 ## Network Monitor (網路監控)
 
