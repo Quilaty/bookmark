@@ -173,6 +173,14 @@ ref: [MDN #CSS_pane](https://developer.mozilla.org/zh-TW/docs/Tools/Page_Inspect
 
 ## Network Monitor (網路監控)
 
+### UI overview
+
+1. 介面分成4個部分
+    1. toolbar, network request list, network request details pane
+    1. ![](img/networkUI.png)
+    1. performance analysis
+    1. ![](img/networkAnalysis.png)
+
 ## Performance Tools (效能工具)
 
 ## Responsive Design Mode (適應性設計模式)
