@@ -183,4 +183,25 @@ ref: [MDN #CSS_pane](https://developer.mozilla.org/zh-TW/docs/Tools/Page_Inspect
 
 ## Performance Tools (效能工具)
 
+### Frame rate (幀速率)
+
+Frame Rate 是一個網站的響應度量，低或不一致的幀速率，可以使一個網站出現反應遲鈍
+60fps的幀頻是平穩的性能目標，給你所有需要響應某些事件更新的16.7毫秒時間預算。
+效能工具追蹤網站可能有的問題，讓我們用其他工具更深入的分析
+
+1. Frame rate graph: 瀏覽器完成一個幀時需要一個時間戳，並使用它來跟踪記錄過程中的幀速率，X軸為時間軸，並且可以看到最大, 最小, 平均幀速
+1. 使用 frame rate graph: 幀速率曲線的巨大價值在於，它給你，你的網站可能是有問題，使您能夠使用其他工具進行更深入的分析的快速指示。例如，這裡有一個性能配置截圖：![](img/perf-fr-waterfall.png)可以看到，平均幀速率是相當健康的，但有三個點，其中幀頻為倒塌數十毫秒。這肯定會導致明顯的口吃的，在網頁中播放任何動畫。
+
+### Waterfall
+
+了解當用戶與你的網站互動時，瀏覽器在做些什麼。
+
+### Call Tree
+
+尋找你網站中的 JavaScript 瓶頸。
+
+### Flame Chart
+
+看看錄製過程中某個 JavaScript 函式在那時執行。
+
 ## Responsive Design Mode (適應性設計模式)
