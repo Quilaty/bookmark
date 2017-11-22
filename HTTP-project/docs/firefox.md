@@ -194,14 +194,14 @@ Frame Rate 是一個網站的響應度量，低或不一致的幀速率，可以
 
 ### Waterfall
 
-了解當用戶與你的網站互動時，瀏覽器在做些什麼。
+顯示瀏覽器的各種行為，諸如組版、JavaScript、重繪、回收資源等
 
 ### Call Tree
 
-尋找你網站中的 JavaScript 瓶頸。
+顯示瀏覽器花費在 JavaScript 函式上的時間
 
 ### Flame Chart
 
-看看錄製過程中某個 JavaScript 函式在那時執行。
+顯示錄製全程中的 JavaScript 呼叫堆疊
 
 ## Responsive Design Mode (適應性設計模式)

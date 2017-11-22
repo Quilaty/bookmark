@@ -4,6 +4,7 @@ pages:
     - Firefox: firefox.md
     - Chrome Dev-tool: dev-tools.md
     - HTTPS: http.md
+    - Web Hacking: hackWeb.md
 theme: 'material'
 markdown_extensions:
   - pymdownx.arithmatex
