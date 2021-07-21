@@ -4,7 +4,7 @@
 
 Git 設定: [github sshkeyGen](http://wiki.csie.ncku.edu.tw/github)
 
-gh-page: <https://code-poison.github.io/noteMK/>
+gh-page: <https://quilaty.github.io/bookmark/>
 
 ## Markdown Note
 
