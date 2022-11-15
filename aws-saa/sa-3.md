@@ -48,3 +48,9 @@ Keywords: storage, route & vpc
 
 1. 輕型目錄存取協定（英文：Lightweight Directory Access Protocol，縮寫：LDAP，/ˈɛldæp/）是一個開放的，中立的，工業標準的應用協定，通過IP協定提供存取控制和維護分散式資訊的目錄資訊。
 * Doc: [輕型目錄存取協定](https://zh.wikipedia.org/zh-tw/%E8%BD%BB%E5%9E%8B%E7%9B%AE%E5%BD%95%E8%AE%BF%E9%97%AE%E5%8D%8F%E8%AE%AE)
+
+## EC2
+
+You have an environment that consists of a public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully commnuicate with other hosts on the internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the internet. What should you do to enable internet access?
+
+## AWS VPN
