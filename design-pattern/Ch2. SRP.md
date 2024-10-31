@@ -12,7 +12,6 @@
 ## 違反 SRP 的問題
 
 ```python
-# 違反 SRP 的例子
 class UserManager:
     def __init__(self):
         self.users = []
@@ -76,7 +75,6 @@ classDiagram
 ## 遵循 SRP 的改進
 
 ```python
-# 遵循 SRP 的重構版本
 class User:
     def __init__(self, name, email):
         self.name = name
