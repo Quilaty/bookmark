@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyWeek",
+              "hour": 10
+            }
+          ]
+        }
+      },
+      "id": "b92f08f1-7835-4c08-bb1f-76e375f89526",
+      "name": "Weekly Trigger",
+      "type": "n8n-nodes-base.cron",
+      "position": [
+        200,
+        -280
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "url": "https://ud05zawv78.execute-api.ap-northeast-1.amazonaws.com/prod/bulletin/check?ID=2607",
+        "options": {}
+      },
+      "id": "6cfaf942-b25e-4210-9147-c82b81c1bf42",
+      "name": "Fetch Events",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        400,
+        -280
+      ],
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "functionCode": "const events = $json[\"event\"];\nconst records = $json[\"record\"];\n\nconst postedIds = new Set(records.map(r => r.EventID));\n\nconst newEvents = events.filter(ev => !postedIds.has(ev.KeyName));\n\nreturn newEvents.map(ev => {\n  return {\n    json: {\n      EVENT_ID: ev.KeyName,\n      ID: \"2607\"\n    }\n  };\n});"
+      },
+      "id": "ab7ab8ae-251e-4dfe-afe7-445abbfbe8d9",
+      "name": "Filter New Events",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        600,
+        -280
+      ],
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://ud05zawv78.execute-api.ap-northeast-1.amazonaws.com/prod/bulletin/add",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"EVENT_ID\": \"{{ $json.EVENT_ID }}\",\n  \"ID\": \"{{ $json.ID }}\"\n}",
+        "options": {}
+      },
+      "id": "31aec131-ff55-469a-b41c-0bdc0cbced41",
+      "name": "POST New Events",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        800,
+        -280
+      ],
+      "typeVersion": 4.2,
+      "alwaysOutputData": true,
+      "executeOnce": false
+    }
+  ],
+  "connections": {
+    "Weekly Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Events": {
+      "main": [
+        [
+          {
+            "node": "Filter New Events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter New Events": {
+      "main": [
+        [
+          {
+            "node": "POST New Events",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "07f29f88cffbede82bc3894af98764a5d3692836d7ece51790a3d6baa6d60c44"
+  }
+}
